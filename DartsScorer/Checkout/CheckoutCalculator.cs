@@ -2,11 +2,11 @@ using Newtonsoft.Json;
 
 namespace DartsScorer.Checkout
 {
-    public class Calculator
+    public class CheckoutCalculator
     {
         private Dictionary<int, List<string>>? _checkoutData;
 
-        public Calculator()
+        public CheckoutCalculator()
         {
             var json = File.ReadAllText(Path.Combine(Path.Combine("checkout", "checkout.json")));
             _checkoutData = JsonConvert.DeserializeObject<Dictionary<int, List<string>>>(json);

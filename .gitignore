@@ -397,4 +397,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-.idea/
+**/bin/
+DartsScorer.Tests/bin/Debug/net8.0
