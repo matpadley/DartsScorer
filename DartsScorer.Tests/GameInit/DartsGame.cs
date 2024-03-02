@@ -1,3 +1,6 @@
+using System;
+using NUnit.Framework;
+
 namespace TestProject1.GameInit;
 using FluentAssertions;
 
