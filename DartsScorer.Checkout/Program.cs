@@ -4,7 +4,7 @@ using DartsScorer.Checkout;
 
 var checkout = new CheckoutCalculator();
 
-int inputScore = 0;
+var inputScore = 0;
 
 if (args.Length == 0)
 {

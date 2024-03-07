@@ -9,9 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
       <Content Update="Checkout\checkout.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>

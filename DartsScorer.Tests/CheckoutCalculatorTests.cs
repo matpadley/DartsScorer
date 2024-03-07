@@ -1,14 +1,13 @@
-using System;
-using NUnit.Framework;
+using DartsScorer.Checkout;
 
-namespace TestProject1.CheckoutCalculator;
+namespace DartsScorer.Tests;
 
-public class Tests
+public class CheckOutCalculatorTests
 {
     [TestCase(170, new [] {"T20", "T20", "DB"})]
     public void ReturnsCorrectCheckoutArray(int score, string[] expectedCheckout)
     {
-        var checkout = new DartsScorer.Checkout.CheckoutCalculator();
+        var checkout = new CheckoutCalculator();
 
         var result = checkout.CalculateCheckout(score);
 
