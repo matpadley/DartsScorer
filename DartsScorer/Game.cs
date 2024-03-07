@@ -25,7 +25,13 @@ public class Game
 
     public void AddPlayers(IEnumerable<string> playerNames)
     {
-        foreach (var playerName in playerNames.ToArray())
+        var enumerable = playerNames as string[] ?? playerNames.ToArray();
+        
+        if (!enumerable.Any())
+        {
+            throw new NoPlayersAddedException();
+        }
+        foreach (var playerName in enumerable.ToArray())
         {
             Players.Add(new Player(playerName, GameType.StartScore));
         }

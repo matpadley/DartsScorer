@@ -1,6 +1,5 @@
 using DartsScorer.Exceptions;
 using DartsScorer.models;
-using DartsScorer.Players;
 using FluentAssertions;
 using Moq.AutoMock;
 
@@ -28,15 +27,13 @@ public class GameInitTests: BaseGameTestSetup
     }
 
     [TestCase]
-    public void CanAddOneOrMorePlayers()
+    public void ThrowsExpcetionWhenNoPlayersSupplied()
     {
         var mocker = new AutoMocker();
         var gameType = mocker.CreateInstance<GameType>();
         var game = new Game(gameType);
-
-        var players = mocker.CreateInstance<List<string>>();
-
-        game.AddPlayers(players);
+        
+        Assert.Throws<NoPlayersAddedException>(() => game.AddPlayers(new List<string>()));
     }
     
     
@@ -47,8 +44,11 @@ public class GameInitTests: BaseGameTestSetup
         var gameType = mocker.CreateInstance<GameType>();
         var game = new Game(gameType);
 
-        var players = mocker.CreateInstance<List<String>>();
-
+        var players = new List<string>()
+        {
+            "Player One"
+        };
+        
         game.AddPlayers(players);
 
         Assert.DoesNotThrow(() => game.Start());
