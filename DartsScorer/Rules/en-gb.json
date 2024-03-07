@@ -6,11 +6,13 @@
     },
     {
       "id": 2,
-      "name": "501"
+      "name": "501",
+      "startScore": 501
     },
     {
       "id": 3,
-      "name": "301"
+      "name": "301",
+      "startScore": 301
     }
   ]
 }

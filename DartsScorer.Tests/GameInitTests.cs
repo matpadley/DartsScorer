@@ -6,7 +6,7 @@ using Moq.AutoMock;
 
 namespace DartsScorer.Tests;
 
-public class GameInitTests
+public class GameInitTests: BaseGameTestSetup
 {
     [TestCase]
     public void GameInitializesCorrectly()
@@ -34,7 +34,7 @@ public class GameInitTests
         var gameType = mocker.CreateInstance<GameType>();
         var game = new Game(gameType);
 
-        var players = mocker.CreateInstance<List<Player>>();
+        var players = mocker.CreateInstance<List<string>>();
 
         game.AddPlayers(players);
     }
@@ -47,10 +47,15 @@ public class GameInitTests
         var gameType = mocker.CreateInstance<GameType>();
         var game = new Game(gameType);
 
-        var players = mocker.CreateInstance<List<Player>>();
+        var players = mocker.CreateInstance<List<String>>();
 
         game.AddPlayers(players);
 
         Assert.DoesNotThrow(() => game.Start());
     }
+}
+
+public class BaseGameTestSetup
+{
+    
 }

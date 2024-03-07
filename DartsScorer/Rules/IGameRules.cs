@@ -1,6 +1,6 @@
 using DartsScorer.models;
 
-namespace DartsScorer.Tests;
+namespace DartsScorer.Rules;
 
 public interface IGameRules
 {

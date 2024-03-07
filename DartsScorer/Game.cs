@@ -8,7 +8,7 @@ public class Game
 {
     public readonly GameType GameType;
 
-    private IEnumerable<Player> _players = Enumerable.Empty<Player>();
+    public ICollection<Player> Players { get; private set; } = new List<Player>();
     
     public Game(GameType gameType)
     {
@@ -17,14 +17,17 @@ public class Game
 
     public void Start()
     {
-        if (!_players.Any())
+        if (!Players.Any())
         {
             throw new NoPlayersAddedException();
         }
     }
 
-    public void AddPlayers(IEnumerable<Player> players)
+    public void AddPlayers(IEnumerable<string> playerNames)
     {
-        _players = players;
+        foreach (var playerName in playerNames.ToArray())
+        {
+            Players.Add(new Player(playerName, GameType.StartScore));
+        }
     }
 }
