@@ -1,6 +1,6 @@
 using DartsScorer.Checkout;
 
-namespace DartsScorer.Tests;
+namespace DartsScorer.Tests.Checkout;
 
 public class CheckOutCalculatorTests
 {
@@ -11,13 +11,13 @@ public class CheckOutCalculatorTests
 
         var result = checkout.CalculateCheckout(score);
 
-        Assert.AreEqual(expectedCheckout, result);
+        Assert.That(result, Is.EqualTo(expectedCheckout));
     }
     
     [TestCase]
     public void ThrowsExceptionWhenScoreIsGreaterThan170()
     {
-        var checkout = new DartsScorer.Checkout.CheckoutCalculator();
+        var checkout = new CheckoutCalculator();
 
         Assert.Throws<ArgumentOutOfRangeException>(() => checkout.CalculateCheckout(171));
     }

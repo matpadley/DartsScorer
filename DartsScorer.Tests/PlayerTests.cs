@@ -49,4 +49,30 @@ public class PlayerTests
 
         Assert.Throws<NoCheckOutAvailableException>(() => player.AvailableCheckout());
     }
+
+    [TestCase]
+    public void PlayerCanThrowTheirThreeDarts()
+    {
+        var name = "player name";
+        var startScore = 501;
+
+        var currentThrow = 12;
+        var throwMultiPlier = 2;
+        
+        var player = new Player(name, startScore);
+        
+        player.InTurn.Should().Be(false);
+        
+        player.Throw(currentThrow, throwMultiPlier);
+        player.DartsThrown.Should().Be(1);
+        player.InTurn.Should().Be(true);
+        
+        player.Throw(currentThrow, throwMultiPlier);
+        player.DartsThrown.Should().Be(2);
+        player.InTurn.Should().Be(true);
+        
+        player.Throw(currentThrow, throwMultiPlier);
+        player.DartsThrown.Should().Be(3);
+        //player.InTurn.Should().Be(false);
+    }
 }

@@ -11,14 +11,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Checkout\" />
       <Folder Include="data\" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Checkout\checkout.json" />
-      <Content Include="Checkout\checkout.json">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </Content>
     </ItemGroup>
 
 </Project>

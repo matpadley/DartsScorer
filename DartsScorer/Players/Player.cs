@@ -15,15 +15,15 @@ public class Player
 
     public string Name { get; private set; }
     public int StartScore { get; }
-    public object Checkout()
-    {
-        return "";
-    }
+    public bool InTurn { get; private set; }
+    public int DartsThrown { get; private set; }
 
     public void Throw(int currentThrow, int throwMultiPlier)
     {
-        
-        CurrentScore = CurrentScore - (currentThrow * throwMultiPlier);
+        InTurn = false;
+        DartsThrown++;
+        CurrentScore -= (currentThrow * throwMultiPlier);
+        InTurn = DartsThrown == 1 || DartsThrown == 2;
     }
 
     public string[] AvailableCheckout()
