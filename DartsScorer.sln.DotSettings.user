@@ -1,13 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55077068_002Deace_002D481e_002D9d0a_002Deb0bfaac4c24/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CanAddOneOrMorePlayers" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55077068_002Deace_002D481e_002D9d0a_002Deb0bfaac4c24/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CanAddOneOrMorePlayers" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ab9c2c8c_002D190e_002D4afa_002D85b8_002D6f3c00df699a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Or&gt;
-    &lt;TestAncestor&gt;
-      &lt;TestId&gt;NUnit3x::E0042382-3847-47C5-8885-F50726210ACB::net8.0::DartsScorer.Tests.GameInitTests&lt;/TestId&gt;
-      &lt;TestId&gt;NUnit3x::E0042382-3847-47C5-8885-F50726210ACB::net8.0::DartsScorer.Tests.PlayerTests.PlayerCanThrowTheirThreeDarts&lt;/TestId&gt;
-    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/mathewpadley/GitHub/DartsScorer/DartsScorer.Tests" Presentation="&amp;lt;DartsScorer.Tests&amp;gt;" /&gt;
     &lt;Project Location="/Users/mathewpadley/GitHub/DartsScorer/DartsScorer.Tests.Checkout" Presentation="&amp;lt;DartsScorer.Tests.Checkout&amp;gt;" /&gt;
   &lt;/Or&gt;
-&lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ab9c2c8c_002D190e_002D4afa_002D85b8_002D6f3c00df699a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/mathewpadley/GitHub/DartsScorer/DartsScorer.Tests" Presentation="&amp;lt;DartsScorer.Tests&amp;gt;" /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

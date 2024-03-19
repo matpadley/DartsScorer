@@ -10,7 +10,7 @@
         <RootNamespace>DartsScorer.Tests.Checkout</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>/>
+    <ItemGroup>
         <PackageReference Include="coverlet.collector" Version="6.0.2"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
         <PackageReference Include="NUnit" Version="3.14.0"/>
@@ -24,6 +24,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DartsScorer.Checkout\DartsScorer.Checkout.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="checkout\checkout.json" />
+      <Content Include="checkout\checkout.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

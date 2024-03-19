@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScrorer.Checkout", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.Checkout", "DartsScorer.Checkout\DartsScorer.Checkout.csproj", "{202C7D37-257B-43F4-BB20-7123A62F4A26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.Tests.Checkout", "DartsScorer.Tests.Checkout\DartsScorer.Tests.Checkout.csproj", "{342A9D8B-6E49-40CF-A064-3BAB677A0526}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.Tests.Checkout", "DartsScorer.Tests.Checkout\DartsScorer.Tests.Checkout.csproj", "{D065E58F-87CD-43E8-BE22-6E7D2386CF09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +42,9 @@ Global
 		{342A9D8B-6E49-40CF-A064-3BAB677A0526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{342A9D8B-6E49-40CF-A064-3BAB677A0526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{342A9D8B-6E49-40CF-A064-3BAB677A0526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D065E58F-87CD-43E8-BE22-6E7D2386CF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D065E58F-87CD-43E8-BE22-6E7D2386CF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D065E58F-87CD-43E8-BE22-6E7D2386CF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D065E58F-87CD-43E8-BE22-6E7D2386CF09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
