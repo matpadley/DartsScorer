@@ -10,7 +10,7 @@ We are currently providing security updates for the following versions:
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability within our project, please send an email to our security team at security@example.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within our projec. All security vulnerabilities will be promptly addressed.
 
 Please DO NOT report security vulnerabilities through GitHub issues.
 
