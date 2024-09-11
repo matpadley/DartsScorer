@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum GameType {
+   // case cricket
+   // case 501
+   // case 301
+}

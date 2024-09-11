@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+class Leg
+{
+    init ()
+    {
+        
+    }
+    var Score: Int32 = 0
+    var Throws: [String] = []
+
+}

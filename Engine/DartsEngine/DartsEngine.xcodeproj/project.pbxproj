@@ -7,8 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125B52F92C91F1A500169214 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B52F82C91F1A500169214 /* Leg.swift */; };
+		125B52FB2C91F1CA00169214 /* Leg_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B52FA2C91F1CA00169214 /* Leg_Tests.swift */; };
 		1292077F2C7F02F00028C2AF /* DartsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1292077E2C7F02F00028C2AF /* DartsEngine.swift */; };
+		129207862C7F030A0028C2AF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129207852C7F030A0028C2AF /* Player.swift */; };
+		1292078E2C7F04870028C2AF /* DartsEngine_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1292078D2C7F04870028C2AF /* DartsEngine_Tests.swift */; };
+		1292078F2C7F04870028C2AF /* libDartsEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1292077B2C7F02F00028C2AF /* libDartsEngine.a */; };
+		129207B22C7F09BF0028C2AF /* GameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129207B12C7F09BF0028C2AF /* GameType.swift */; };
+		129207B42C7F09D60028C2AF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129207B32C7F09D60028C2AF /* Game.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		129207902C7F04870028C2AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 129207732C7F02F00028C2AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1292077A2C7F02F00028C2AF;
+			remoteInfo = DartsEngine;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		129207792C7F02F00028C2AF /* CopyFiles */ = {
@@ -23,8 +40,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		125B52F82C91F1A500169214 /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		125B52FA2C91F1CA00169214 /* Leg_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg_Tests.swift; sourceTree = "<group>"; };
 		1292077B2C7F02F00028C2AF /* libDartsEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDartsEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1292077E2C7F02F00028C2AF /* DartsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsEngine.swift; sourceTree = "<group>"; };
+		129207852C7F030A0028C2AF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		1292078B2C7F04870028C2AF /* DartsEngine.Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartsEngine.Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1292078D2C7F04870028C2AF /* DartsEngine_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsEngine_Tests.swift; sourceTree = "<group>"; };
+		129207B12C7F09BF0028C2AF /* GameType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameType.swift; sourceTree = "<group>"; };
+		129207B32C7F09D60028C2AF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		129207882C7F04870028C2AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1292078F2C7F04870028C2AF /* libDartsEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				1292077D2C7F02F00028C2AF /* DartsEngine */,
+				1292078C2C7F04870028C2AF /* DartsEngine.Tests */,
 				1292077C2C7F02F00028C2AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				1292077B2C7F02F00028C2AF /* libDartsEngine.a */,
+				1292078B2C7F04870028C2AF /* DartsEngine.Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +92,21 @@
 			isa = PBXGroup;
 			children = (
 				1292077E2C7F02F00028C2AF /* DartsEngine.swift */,
+				129207852C7F030A0028C2AF /* Player.swift */,
+				129207B12C7F09BF0028C2AF /* GameType.swift */,
+				129207B32C7F09D60028C2AF /* Game.swift */,
 			);
 			path = DartsEngine;
+			sourceTree = "<group>";
+		};
+		1292078C2C7F04870028C2AF /* DartsEngine.Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1292078D2C7F04870028C2AF /* DartsEngine_Tests.swift */,
+				125B52F82C91F1A500169214 /* Leg.swift */,
+				125B52FA2C91F1CA00169214 /* Leg_Tests.swift */,
+			);
+			path = DartsEngine.Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +129,24 @@
 			productReference = 1292077B2C7F02F00028C2AF /* libDartsEngine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1292078A2C7F04870028C2AF /* DartsEngine.Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 129207922C7F04870028C2AF /* Build configuration list for PBXNativeTarget "DartsEngine.Tests" */;
+			buildPhases = (
+				129207872C7F04870028C2AF /* Sources */,
+				129207882C7F04870028C2AF /* Frameworks */,
+				129207892C7F04870028C2AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				129207912C7F04870028C2AF /* PBXTargetDependency */,
+			);
+			name = DartsEngine.Tests;
+			productName = DartsEngine.Tests;
+			productReference = 1292078B2C7F04870028C2AF /* DartsEngine.Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +158,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					1292077A2C7F02F00028C2AF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1292078A2C7F04870028C2AF = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -111,20 +179,52 @@
 			projectRoot = "";
 			targets = (
 				1292077A2C7F02F00028C2AF /* DartsEngine */,
+				1292078A2C7F04870028C2AF /* DartsEngine.Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		129207892C7F04870028C2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		129207772C7F02F00028C2AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129207862C7F030A0028C2AF /* Player.swift in Sources */,
 				1292077F2C7F02F00028C2AF /* DartsEngine.swift in Sources */,
+				129207B22C7F09BF0028C2AF /* GameType.swift in Sources */,
+				129207B42C7F09D60028C2AF /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		129207872C7F04870028C2AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125B52F92C91F1A500169214 /* Leg.swift in Sources */,
+				125B52FB2C91F1CA00169214 /* Leg_Tests.swift in Sources */,
+				1292078E2C7F04870028C2AF /* DartsEngine_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		129207912C7F04870028C2AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1292077A2C7F02F00028C2AF /* DartsEngine */;
+			targetProxy = 129207902C7F04870028C2AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		129207802C7F02F00028C2AF /* Debug */ = {
@@ -227,6 +327,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -270,6 +371,36 @@
 			};
 			name = Release;
 		};
+		129207932C7F04870028C2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hewley.DartsEngine-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		129207942C7F04870028C2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Hewley.DartsEngine-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -287,6 +418,15 @@
 			buildConfigurations = (
 				129207832C7F02F00028C2AF /* Debug */,
 				129207842C7F02F00028C2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		129207922C7F04870028C2AF /* Build configuration list for PBXNativeTarget "DartsEngine.Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				129207932C7F04870028C2AF /* Debug */,
+				129207942C7F04870028C2AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
