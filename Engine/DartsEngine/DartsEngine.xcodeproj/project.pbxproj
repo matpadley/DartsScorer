@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		125B52F92C91F1A500169214 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B52F82C91F1A500169214 /* Leg.swift */; };
 		125B52FB2C91F1CA00169214 /* Leg_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B52FA2C91F1CA00169214 /* Leg_Tests.swift */; };
+		125B52FC2C91F7DB00169214 /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B52F82C91F1A500169214 /* Leg.swift */; };
+		125B52FE2C91FC0100169214 /* AvailableScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B52FD2C91FC0100169214 /* AvailableScores.swift */; };
 		1292077F2C7F02F00028C2AF /* DartsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1292077E2C7F02F00028C2AF /* DartsEngine.swift */; };
 		129207862C7F030A0028C2AF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129207852C7F030A0028C2AF /* Player.swift */; };
 		1292078E2C7F04870028C2AF /* DartsEngine_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1292078D2C7F04870028C2AF /* DartsEngine_Tests.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		125B52F82C91F1A500169214 /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
 		125B52FA2C91F1CA00169214 /* Leg_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg_Tests.swift; sourceTree = "<group>"; };
+		125B52FD2C91FC0100169214 /* AvailableScores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableScores.swift; sourceTree = "<group>"; };
 		1292077B2C7F02F00028C2AF /* libDartsEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDartsEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1292077E2C7F02F00028C2AF /* DartsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DartsEngine.swift; sourceTree = "<group>"; };
 		129207852C7F030A0028C2AF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -91,10 +93,12 @@
 		1292077D2C7F02F00028C2AF /* DartsEngine */ = {
 			isa = PBXGroup;
 			children = (
+				125B52F82C91F1A500169214 /* Leg.swift */,
 				1292077E2C7F02F00028C2AF /* DartsEngine.swift */,
 				129207852C7F030A0028C2AF /* Player.swift */,
 				129207B12C7F09BF0028C2AF /* GameType.swift */,
 				129207B32C7F09D60028C2AF /* Game.swift */,
+				125B52FD2C91FC0100169214 /* AvailableScores.swift */,
 			);
 			path = DartsEngine;
 			sourceTree = "<group>";
@@ -103,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				1292078D2C7F04870028C2AF /* DartsEngine_Tests.swift */,
-				125B52F82C91F1A500169214 /* Leg.swift */,
 				125B52FA2C91F1CA00169214 /* Leg_Tests.swift */,
 			);
 			path = DartsEngine.Tests;
@@ -199,9 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125B52FE2C91FC0100169214 /* AvailableScores.swift in Sources */,
 				129207862C7F030A0028C2AF /* Player.swift in Sources */,
 				1292077F2C7F02F00028C2AF /* DartsEngine.swift in Sources */,
 				129207B22C7F09BF0028C2AF /* GameType.swift in Sources */,
+				125B52FC2C91F7DB00169214 /* Leg.swift in Sources */,
 				129207B42C7F09D60028C2AF /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125B52F92C91F1A500169214 /* Leg.swift in Sources */,
 				125B52FB2C91F1CA00169214 /* Leg_Tests.swift in Sources */,
 				1292078E2C7F04870028C2AF /* DartsEngine_Tests.swift in Sources */,
 			);
