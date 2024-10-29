@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.Checkout", "Dar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.Tests.Checkout", "DartsScorer.Tests.Checkout\DartsScorer.Tests.Checkout.csproj", "{D065E58F-87CD-43E8-BE22-6E7D2386CF09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DartsScorer.MauiApp", "DartsScorer.MauiApp\DartsScorer.MauiApp.csproj", "{342A9D8B-6E49-40CF-A064-3BAB677A0526}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
