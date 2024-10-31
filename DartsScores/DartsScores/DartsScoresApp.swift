@@ -7,7 +7,10 @@
 
 import SwiftUI
 import SwiftData
+<<<<<<< Updated upstream
 import Foundation
+=======
+>>>>>>> Stashed changes
 
 @main
 struct DartsScoresApp: App {

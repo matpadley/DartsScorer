@@ -29,9 +29,28 @@
 		126E1B862CD3FBF200C15E59 /* DartsScoresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DartsScoresUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+<<<<<<< Updated upstream
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		126E1B6A2CD3FBF100C15E59 /* DartsScores */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+=======
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		126E1B8E2CD3FBF200C15E59 /* Exceptions for "DartsScores" folder in "DartsScores" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 126E1B672CD3FBF100C15E59 /* DartsScores */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		126E1B6A2CD3FBF100C15E59 /* DartsScores */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				126E1B8E2CD3FBF200C15E59 /* Exceptions for "DartsScores" folder in "DartsScores" target */,
+			);
+>>>>>>> Stashed changes
 			path = DartsScores;
 			sourceTree = "<group>";
 		};
